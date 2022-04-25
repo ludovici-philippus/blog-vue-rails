@@ -1264,3 +1264,403 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 779)
 
 
+Started GET "/categories" for ::1 at 2022-04-25 10:52:53 -0300
+Started GET "/posts" for ::1 at 2022-04-25 10:52:53 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 5.5ms | ActiveRecord: 0.6ms | Allocations: 21831)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 46ms (Views: 25.0ms | ActiveRecord: 0.9ms | Allocations: 29421)
+
+
+Started GET "/categories" for 127.0.0.1 at 2022-04-25 11:01:08 -0300
+Processing by CategoriesController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.5ms | Allocations: 1576)
+
+
+Started GET "/posts" for 127.0.0.1 at 2022-04-25 11:01:08 -0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 815)
+
+
+Started GET "/posts" for 127.0.0.1 at 2022-04-25 11:21:00 -0300
+Started GET "/categories" for 127.0.0.1 at 2022-04-25 11:21:00 -0300
+Processing by CategoriesController#index as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1481)
+
+
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 802)
+
+
+Started GET "/categories" for 127.0.0.1 at 2022-04-25 11:21:04 -0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Started GET "/posts" for 127.0.0.1 at 2022-04-25 11:21:04 -0300
+Processing by PostsController#index as HTML
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 1136)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1663)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:35:25 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"teste", "password"=>"[FILTERED]", "authentication"=>{"name"=>"teste", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 1ms (Allocations: 1824)
+
+
+  
+NameError (uninitialized constant AuthenticationController::User):
+  
+app/controllers/authentication_controller.rb:6:in `login'
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:36:45 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"teste", "password"=>"[FILTERED]", "authentication"=>{"name"=>"teste", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 7ms (Allocations: 3137)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/author.rb:4:in `<class:Author>'
+app/models/author.rb:1:in `<main>'
+app/controllers/authentication_controller.rb:6:in `login'
+Started GET "/categories" for ::1 at 2022-04-25 11:38:06 -0300
+Started GET "/posts" for ::1 at 2022-04-25 11:38:06 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoriesController#index as HTML
+Processing by PostsController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 21879)
+
+
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 6.6ms | ActiveRecord: 0.7ms | Allocations: 28452)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:38:11 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"teste", "password"=>"[FILTERED]", "authentication"=>{"name"=>"teste", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "teste"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 3428)
+
+
+Started GET "/categories" for 127.0.0.1 at 2022-04-25 11:38:16 -0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 841)
+
+
+Started GET "/posts" for 127.0.0.1 at 2022-04-25 11:38:16 -0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 781)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:38:21 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.5ms | Allocations: 5447)
+
+
+  
+NoMethodError (undefined method `password_digest' for #<Author id: 2, name: "Luis", password: [FILTERED], created_at: "2022-04-25 12:33:30.598099000 +0000", updated_at: "2022-04-25 12:33:30.598099000 +0000">
+Did you mean?  password):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started GET "/categories" for 127.0.0.1 at 2022-04-25 11:38:24 -0300
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 826)
+
+
+Started GET "/posts" for 127.0.0.1 at 2022-04-25 11:38:24 -0300
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 779)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:38:26 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 2920)
+
+
+  
+NoMethodError (undefined method `password_digest' for #<Author id: 2, name: "Luis", password: [FILTERED], created_at: "2022-04-25 12:33:30.598099000 +0000", updated_at: "2022-04-25 12:33:30.598099000 +0000">
+Did you mean?  password):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPasswordDigestToAuthor (20220425144043)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "authors" ADD "password_digest" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220425144043"]]
+  [1m[36mTRANSACTION (209.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:41:36 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 5620)
+
+
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mAuthor Update All (221.7ms)[0m  [1m[33mUPDATE "authors" SET "password_digest" = ?[0m  [["password_digest", "[FILTERED]"]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:43:25 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms | Allocations: 562)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/authors" for 127.0.0.1 at 2022-04-25 11:44:30 -0300
+Processing by AuthorsController#create as HTML
+  Parameters: {"author"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 217)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: author):
+  
+app/controllers/authors_controller.rb:49:in `author_params'
+app/controllers/authors_controller.rb:18:in `create'
+Started POST "/authors" for 127.0.0.1 at 2022-04-25 11:45:04 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+{authors:{name: 'Luis Felipe', password: 123}}
+Processing by AuthorsController#create as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 116)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/authors_controller.rb:49:in `author_params'
+app/controllers/authors_controller.rb:18:in `create'
+Started POST "/authors" for 127.0.0.1 at 2022-04-25 11:45:43 -0300
+Processing by AuthorsController#create as HTML
+  Parameters: {"authors"=>{"name"=>"Luis", "password"=>"[FILTERED]"}, "author"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 152)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: author
+Did you mean?  authors):
+  
+app/controllers/authors_controller.rb:49:in `author_params'
+app/controllers/authors_controller.rb:18:in `create'
+Started POST "/authors" for 127.0.0.1 at 2022-04-25 11:45:54 -0300
+Processing by AuthorsController#create as HTML
+  Parameters: {"author"=>{"name"=>"Luis", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:20:in `create'
+  [1m[36mAuthor Create (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("name", "password", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Luis"], ["password", "[FILTERED]"], ["created_at", "2022-04-25 14:45:55.194799"], ["updated_at", "2022-04-25 14:45:55.194799"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/authors_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (205.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:20:in `create'
+Completed 201 Created in 462ms (Views: 2.2ms | ActiveRecord: 206.2ms | Allocations: 2746)
+
+
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mAuthor Delete All (0.1ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", nil]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mAuthor Delete All (1.2ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 2]]
+  [1m[36mAuthor Delete All (1.1ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 2]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mAuthor Delete All (0.3ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", nil]]
+  [1m[36mAuthor Delete All (1.1ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 2]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Destroy (0.3ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Destroy (1.0ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAuthor Destroy (1.0ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+Started POST "/authors" for 127.0.0.1 at 2022-04-25 11:52:34 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthorsController#create as HTML
+  Parameters: {"author"=>{"name"=>"Luis Felipe", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:20:in `create'
+  [1m[36mAuthor Create (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("name", "password", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Luis Felipe"], ["password", "[FILTERED]"], ["created_at", "2022-04-25 14:52:34.763638"], ["updated_at", "2022-04-25 14:52:34.763638"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/authors_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (220.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:20:in `create'
+Completed 201 Created in 466ms (Views: 1.6ms | ActiveRecord: 221.6ms | Allocations: 22491)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:52:39 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis Felipe", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis Felipe", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis Felipe"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 234ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 2062)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:53:22 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis Felipe", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis Felipe", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis Felipe"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 233ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 673)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:53:44 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis Felipe", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis Felipe", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis Felipe"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 229ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 672)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:54:33 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"teste", "password"=>"[FILTERED]", "authentication"=>{"name"=>"teste", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "teste"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 522)
+
+
+Started GET "/categories" for 127.0.0.1 at 2022-04-25 11:54:43 -0300
+Processing by CategoriesController#index as HTML
+Started GET "/posts" for 127.0.0.1 at 2022-04-25 11:54:43 -0300
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.5ms | Allocations: 4240)
+
+
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 0.5ms | Allocations: 8296)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:54:45 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis Felipe", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis Felipe", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis Felipe"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 235ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 659)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:55:33 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"teste", "password"=>"[FILTERED]", "authentication"=>{"name"=>"teste", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "teste"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 536)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:55:37 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis Felipe", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis Felipe", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis Felipe"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 249ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 657)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:59:38 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 563)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/authentication_controller.rb:7:in `login'
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:59:45 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis Felipe", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis Felipe", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis Felipe"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 239ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 659)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 11:59:50 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis Felipe", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis Felipe", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis Felipe"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 249ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 657)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2022-04-25 12:00:53 -0300
+Processing by AuthenticationController#login as HTML
+  Parameters: {"name"=>"Luis Felipe", "password"=>"[FILTERED]", "authentication"=>{"name"=>"Luis Felipe", "password"=>"[FILTERED]"}}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors" WHERE "authors"."name" = ? LIMIT ?[0m  [["name", "Luis Felipe"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 242ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 657)
+
+

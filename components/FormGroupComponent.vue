@@ -1,7 +1,7 @@
 <template>
   <div class='form-group'>
     <label :for='name'>{{ label }}</label>
-    <input v-if='!is_textarea' :id='name' :name='name' :placeholder='placeholder'>
+    <input v-if='!is_textarea' :type='type' :id='name' :name='name' :placeholder='placeholder'>
     <textarea v-else :id='name' :name='name' :placeholder='placeholder'></textarea>
   </div>
 </template>
@@ -17,6 +17,12 @@ export default Vue.extend({
     is_textarea: {
       required: false,
       type: Boolean
+    },
+    type: {
+      default: 'text',
+      required: false,
+      type: String
+
     }
   }
 })
