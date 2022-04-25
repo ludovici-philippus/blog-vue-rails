@@ -1,0 +1,23 @@
+[
+  {
+    "name": "admin",
+    "path": "/admin",
+    "component": "/home/luis/Estudos/vuejs_nodejs/blog-ruby/pages/admin/index.vue",
+    "chunkName": "pages/admin/index",
+    "_name": "_8ec1c208"
+  },
+  {
+    "name": "admin-login",
+    "path": "/admin/login",
+    "component": "/home/luis/Estudos/vuejs_nodejs/blog-ruby/pages/admin/login.vue",
+    "chunkName": "pages/admin/login",
+    "_name": "_fb727bda"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/luis/Estudos/vuejs_nodejs/blog-ruby/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_4979533c"
+  }
+]

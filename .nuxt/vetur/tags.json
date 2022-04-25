@@ -1,0 +1,26 @@
+{
+  "FormGroupComponent": {
+    "description": "Auto imported from components/FormGroupComponent.vue"
+  },
+  "AdminLoginComponent": {
+    "description": "Auto imported from components/Admin/LoginComponent.vue"
+  },
+  "HeaderBaseComponent": {
+    "description": "Auto imported from components/Header/BaseComponent.vue"
+  },
+  "HeaderCategoriesComponent": {
+    "description": "Auto imported from components/Header/CategoriesComponent.vue"
+  },
+  "HeaderNavbarComponent": {
+    "description": "Auto imported from components/Header/NavbarComponent.vue"
+  },
+  "MainBaseComponent": {
+    "description": "Auto imported from components/Main/BaseComponent.vue"
+  },
+  "MainPostSingleComponent": {
+    "description": "Auto imported from components/Main/PostSingleComponent.vue"
+  },
+  "MainPostsComponent": {
+    "description": "Auto imported from components/Main/PostsComponent.vue"
+  }
+}
