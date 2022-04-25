@@ -7,6 +7,9 @@ You can directly use them in pages and other components without the need to impo
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
 - `<FormGroupComponent>` | `<form-group-component>` (components/FormGroupComponent.vue)
+- `<AdminCreateCategoryComponent>` | `<admin-create-category-component>` (components/Admin/CreateCategoryComponent.vue)
+- `<AdminCreatePostComponent>` | `<admin-create-post-component>` (components/Admin/CreatePostComponent.vue)
+- `<AdminHeaderComponent>` | `<admin-header-component>` (components/Admin/HeaderComponent.vue)
 - `<AdminLoginComponent>` | `<admin-login-component>` (components/Admin/LoginComponent.vue)
 - `<HeaderBaseComponent>` | `<header-base-component>` (components/Header/BaseComponent.vue)
 - `<HeaderCategoriesComponent>` | `<header-categories-component>` (components/Header/CategoriesComponent.vue)

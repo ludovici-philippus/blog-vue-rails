@@ -7,11 +7,25 @@
     "_name": "_8ec1c208"
   },
   {
-    "name": "admin-login",
-    "path": "/admin/login",
-    "component": "/home/luis/Estudos/vuejs_nodejs/blog-ruby/pages/admin/login.vue",
-    "chunkName": "pages/admin/login",
-    "_name": "_fb727bda"
+    "name": "admin-add-category",
+    "path": "/admin/add-category",
+    "component": "/home/luis/Estudos/vuejs_nodejs/blog-ruby/pages/admin/add-category.vue",
+    "chunkName": "pages/admin/add-category",
+    "_name": "_73a25570"
+  },
+  {
+    "name": "admin-add-post",
+    "path": "/admin/add-post",
+    "component": "/home/luis/Estudos/vuejs_nodejs/blog-ruby/pages/admin/add-post.vue",
+    "chunkName": "pages/admin/add-post",
+    "_name": "_49ca0d12"
+  },
+  {
+    "name": "admin-manage-categories",
+    "path": "/admin/manage-categories",
+    "component": "/home/luis/Estudos/vuejs_nodejs/blog-ruby/pages/admin/manage-categories.vue",
+    "chunkName": "pages/admin/manage-categories",
+    "_name": "_bea594a4"
   },
   {
     "name": "index",
@@ -19,5 +33,19 @@
     "component": "/home/luis/Estudos/vuejs_nodejs/blog-ruby/pages/index.vue",
     "chunkName": "pages/index",
     "_name": "_4979533c"
+  },
+  {
+    "name": "idCategory",
+    "path": "/:idCategory",
+    "component": "/home/luis/Estudos/vuejs_nodejs/blog-ruby/pages/_idCategory/index.vue",
+    "chunkName": "pages/_idCategory/index",
+    "_name": "_02cf77c5"
+  },
+  {
+    "name": "idCategory-idPost",
+    "path": "/:idCategory/:idPost",
+    "component": "/home/luis/Estudos/vuejs_nodejs/blog-ruby/pages/_idCategory/_idPost/index.vue",
+    "chunkName": "pages/_idCategory/_idPost/index",
+    "_name": "_bccc9b20"
   }
 ]

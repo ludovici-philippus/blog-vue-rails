@@ -1,7 +1,8 @@
 export const state = () => ({
   api_path: 'http://localhost:3000',
   logged: false,
-  token: ''
+  token: '',
+  user_id: -1
 });
 
 export const mutations = {
@@ -10,6 +11,9 @@ export const mutations = {
   },
   setToken(state: any, value: String) {
     state.token = value;
+  },
+  setUserId(state: any, value: Number) {
+    state.user_id = value;
   }
 }
 export const getters = {
@@ -24,5 +28,8 @@ export const getters = {
   },
   getToken(state: any) {
     return state.token;
+  },
+  getUserId(state: any) {
+    return state.user_id;
   }
 }

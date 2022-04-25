@@ -1,6 +1,8 @@
 <template>
   <header>
-    <h1>Blog</h1>
+    <h1>
+      <NuxtLink to='/'>Blog</NuxtLink>
+    </h1>
     <HeaderNavbarComponent />
     <HeaderCategoriesComponent />
   </header>
@@ -17,5 +19,11 @@ header {
   background-color: steelblue;
   text-align: center;
   padding: 20px 0;
+}
+
+a {
+  color: white;
+  margin: 10px 0;
+  text-decoration: none;
 }
 </style>

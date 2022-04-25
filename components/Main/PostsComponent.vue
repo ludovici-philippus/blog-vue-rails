@@ -19,10 +19,14 @@ export default Vue.extend({
   methods: {
     async get_posts() {
       const API_PATH = this.$store.getters.getApiPath;
-      const POSTS = await this.$axios.get(`${API_PATH}/posts`);
+      let POSTS = '';
+      if (this.$route.params.idCategory !== undefined) {
+        const CATEGORY_ID = this.$route.params.idCategory;
+        POSTS = await this.$axios.get(`${API_PATH}/posts/category/${CATEGORY_ID}`);
+      } else
+        POSTS = await this.$axios.get(`${API_PATH}/posts`);
 
       this.posts = POSTS.data;
-      console.log(this.posts);
     },
     description_generator(content: string) {
       return content.substr(0, 100)

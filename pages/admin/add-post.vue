@@ -1,16 +1,15 @@
 <template>
   <div>
-    <h1>Admin</h1>
     <AdminLoginComponent v-if='!this.$store.getters.isLogged' />
-    <AdminHeaderComponent v-else />
+    <AdminHeaderComponent v-if='this.$store.getters.isLogged' />
+    <AdminCreatePostComponent v-if='this.$store.getters.isLogged' />
   </div>
 </template>
 
-<script lang="ts">
+<script lang='ts'>
 import Vue from 'vue'
-
 export default Vue.extend({
-  name: 'AdminPage',
+  name: 'AdminCreatePostPage'
 })
 </script>
 
@@ -19,6 +18,12 @@ export default Vue.extend({
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: rgb(235, 235, 235);
+  height: 100%;
 }
 
 .container {

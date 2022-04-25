@@ -1,4 +1,7 @@
 export { default as FormGroupComponent } from '../../components/FormGroupComponent.vue'
+export { default as AdminCreateCategoryComponent } from '../../components/Admin/CreateCategoryComponent.vue'
+export { default as AdminCreatePostComponent } from '../../components/Admin/CreatePostComponent.vue'
+export { default as AdminHeaderComponent } from '../../components/Admin/HeaderComponent.vue'
 export { default as AdminLoginComponent } from '../../components/Admin/LoginComponent.vue'
 export { default as HeaderBaseComponent } from '../../components/Header/BaseComponent.vue'
 export { default as HeaderCategoriesComponent } from '../../components/Header/CategoriesComponent.vue'

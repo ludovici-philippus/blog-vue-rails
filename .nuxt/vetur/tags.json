@@ -2,6 +2,15 @@
   "FormGroupComponent": {
     "description": "Auto imported from components/FormGroupComponent.vue"
   },
+  "AdminCreateCategoryComponent": {
+    "description": "Auto imported from components/Admin/CreateCategoryComponent.vue"
+  },
+  "AdminCreatePostComponent": {
+    "description": "Auto imported from components/Admin/CreatePostComponent.vue"
+  },
+  "AdminHeaderComponent": {
+    "description": "Auto imported from components/Admin/HeaderComponent.vue"
+  },
   "AdminLoginComponent": {
     "description": "Auto imported from components/Admin/LoginComponent.vue"
   },

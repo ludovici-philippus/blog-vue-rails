@@ -41,5 +41,12 @@ li {
 a {
   color: orange;
   text-decoration: none;
+  margin-top: 10px;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 </style>

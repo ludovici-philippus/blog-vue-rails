@@ -49,5 +49,6 @@ textarea {
   width: 100%;
   height: 144px;
   margin-bottom: 10px;
+  resize: vertical;
 }
 </style>

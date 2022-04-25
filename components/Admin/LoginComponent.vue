@@ -38,8 +38,10 @@ export default Vue.extend({
           return;
 
         const TOKEN = RESULT.data.token;
+        const USER_ID = RESULT.data.id;
         this.$store.commit('setToken', TOKEN);
         this.$store.commit('setLogin', true);
+        this.$store.commit('setUserId', USER_ID);
       } catch (err) {
         alert("Falha ao logar!")
       }
