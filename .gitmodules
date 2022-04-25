@@ -1,0 +1,3 @@
+[submodule "blog_api"]
+	path = blog_api
+	url = https://github.com/ludovici-philippus/blog-vue-rails
